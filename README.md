@@ -31,8 +31,13 @@ Most of this code was written by [Kai Blin](http://github.com/kblin)
 ## Index
 
 * [Python tracer helper](#pytracer)
+* [matrix2patscan](#matrix2patscan)
 
 ### <a id="pytracer"></a> Python tracer helper
 
 Tracing helpers for some python container classes.
 Contains a `trace_caller` decorator, a `TraceList`, and a `TraceDict`.
+
+### <a id="matrix2patscan"></a> Matrix2PatScan
+
+Script to convert a "patser" DNA search pattern for PatScan and PatScanUI
