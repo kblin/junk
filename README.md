@@ -32,6 +32,7 @@ Most of this code was written by [Kai Blin](http://github.com/kblin)
 
 * [Python tracer helper](#pytracer)
 * [matrix2patscan](#matrix2patscan)
+* [Docker cleanup](#docker_cleanup)
 
 ### <a id="pytracer"></a> Python tracer helper
 
@@ -41,3 +42,7 @@ Contains a `trace_caller` decorator, a `TraceList`, and a `TraceDict`.
 ### <a id="matrix2patscan"></a> Matrix2PatScan
 
 Script to convert a "patser" DNA search pattern for PatScan and PatScanUI
+
+### <a id="docker_cleanup"></a> Docker cleanup
+
+Scripts to clean up leftover docker images and containers.
