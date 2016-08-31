@@ -33,6 +33,7 @@ Most of this code was written by [Kai Blin](http://github.com/kblin)
 * [Python tracer helper](#pytracer)
 * [matrix2patscan](#matrix2patscan)
 * [Docker cleanup](#docker_cleanup)
+* [Activate anaconda](#anaconda_activate)
 
 ### <a id="pytracer"></a> Python tracer helper
 
@@ -46,3 +47,8 @@ Script to convert a "patser" DNA search pattern for PatScan and PatScanUI
 ### <a id="docker_cleanup"></a> Docker cleanup
 
 Scripts to clean up leftover docker images and containers.
+
+
+### <a id="anaconda_activate"></a> Activate anaconda
+
+Source this to activate a local anaconda install, inspired by `virtualenv`.

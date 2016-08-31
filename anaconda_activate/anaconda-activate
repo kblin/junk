@@ -1,0 +1,27 @@
+# source this file from bash, don't run it
+anaconda-deactivate () {
+    if [ -n "$PRE_ANACONDA_PATH" ]; then
+        export PATH="$PRE_ANACONDA_PATH"
+        unset PRE_ANACONDA_PATH
+    fi
+
+    if [ -n "$PRE_ANACONDA_VIRTUALENV" ]; then
+        export VIRTUAL_ENV="$PRE_ANACONDA_VIRTUALENV"
+        unset PRE_ANACONDA_VIRTUALENV
+    else
+        unset VIRTUAL_ENV
+    fi
+
+    hash -r 2>/dev/null
+    unset -f anaconda-deactivate
+}
+
+export PRE_ANACONDA_PATH="$PATH"
+# FIXME: Change this to wherever anaconda3 is installed to
+export PATH="/data/biosoft/anaconda3/bin:$PATH"
+
+export PRE_ANACONDA_VIRTUALENV="$VIRTUAL_ENV"
+VIRTUAL_ENV="anaconda"
+export VIRTUAL_ENV
+
+hash -r 2>/dev/null
