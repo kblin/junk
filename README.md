@@ -34,6 +34,7 @@ Most of this code was written by [Kai Blin](http://github.com/kblin)
 * [matrix2patscan](#matrix2patscan)
 * [Docker cleanup](#docker_cleanup)
 * [Activate anaconda](#anaconda_activate)
+* [GenBank release dates](#gbk_release_dates)
 
 ### <a id="pytracer"></a> Python tracer helper
 
@@ -52,3 +53,8 @@ Scripts to clean up leftover docker images and containers.
 ### <a id="anaconda_activate"></a> Activate anaconda
 
 Source this to activate a local anaconda install, inspired by `virtualenv`.
+
+### <a id="gbk_release_dates"></a> GenBank release dates
+
+Script to get the release years of a directory full of GenBank sequences, based on the
+literature references in the GenBank file.
